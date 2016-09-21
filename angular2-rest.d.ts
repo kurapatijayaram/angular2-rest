@@ -1,5 +1,5 @@
-import { Http, Request } from "angular2/http";
-import { Observable } from "rxjs/Observable";
+import { Http, Request } from "@angular/http";
+import { Observable } from "rxjs/Rx";
 /**
 * Angular 2 RESTClient class.
 *

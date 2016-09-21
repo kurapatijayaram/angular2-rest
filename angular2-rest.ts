@@ -27,14 +27,14 @@ Table of Contents:
     @Body
 */
 
-import {Inject} from "angular2/core";
+import {Inject} from "@angular/core";
 import {
 Http, Headers as AngularHeaders,
 Request, RequestOptions, RequestMethod as RequestMethods,
 Response,
 URLSearchParams
-} from "angular2/http";
-import {Observable} from "rxjs/Observable";
+} from "@angular/http";
+import {Observable} from "rxjs/Rx";
 
 /**
 * Angular 2 RESTClient class.
@@ -175,7 +175,7 @@ export enum MediaType {
 }
 
 
-function methodBuilder(method: number) {
+function methodBuilder(method: RequestMethods) {
     return function(url: string) {
         return function(target: RESTClient, propertyKey: string, descriptor: any) {
 
